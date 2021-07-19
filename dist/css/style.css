@@ -76,4 +76,36 @@ body {
 .main-header__two-buttons .main-header__button--checkstatus {
   background-image: url("/dist/img/checkstatus.svg");
 }
+
+@media (min-width: 768px) {
+  .main-header {
+    padding: 0 24px;
+  }
+  .main-header__delimiter {
+    display: block !important;
+    margin: 0 20px;
+    padding: 0;
+  }
+  .main-header__logo {
+    margin: 0;
+  }
+  .main-header__three-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 152px;
+  }
+  .main-header__three-buttons .main-header__button--call {
+    background-image: url("/dist/img/call.svg");
+  }
+  .main-header__three-buttons .main-header__button--chat {
+    background-image: url("/dist/img/chat.svg");
+  }
+  .main-header__three-buttons .main-header__button--profile {
+    background-image: url("/dist/img/profile.svg");
+  }
+}
 /*# sourceMappingURL=style.css.map */

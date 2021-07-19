@@ -1,0 +1,33 @@
+@media (min-width: 768px) {
+  .main-header {
+    padding: 0 24px;
+
+    &__delimiter {
+      display: block !important;
+      margin: 0 20px;
+      padding: 0;
+    }
+
+    &__logo {
+      margin: 0;
+    }
+
+    &__three-buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 152px;
+
+      .main-header__button {
+        &--call {
+          background-image: url('/dist/img/call.svg');
+        }
+        &--chat {
+          background-image: url('/dist/img/chat.svg');
+        }
+        &--profile {
+          background-image: url('/dist/img/profile.svg');
+        }
+      }
+    }
+  }
+}
