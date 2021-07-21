@@ -16,18 +16,6 @@
       display: flex;
       justify-content: space-between;
       width: 152px;
-
-      .main-header__button {
-        &--call {
-          background-image: url('/dist/img/call.svg');
-        }
-        &--chat {
-          background-image: url('/dist/img/chat.svg');
-        }
-        &--profile {
-          background-image: url('/dist/img/profile.svg');
-        }
-      }
     }
   }
 }

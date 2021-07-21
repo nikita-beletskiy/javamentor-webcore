@@ -1,0 +1,33 @@
+@media (min-width: 1120px) {
+  .main-header {
+    display: none;
+  }
+  .services {
+    grid-template-columns: 32px auto 32px;
+    grid-template-rows: 40px auto auto 176px;
+
+    &__two-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'TT Lakes Medium';
+
+      div {
+        margin-left: 8px;
+
+        &:first-of-type {
+          margin-right: 32px;
+        }
+      }
+    }
+
+    &__options-list {
+      overflow: auto;
+      flex-wrap: wrap;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
