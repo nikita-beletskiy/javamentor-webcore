@@ -112,8 +112,8 @@ body {
 .services {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5% 90% 5%;
-      grid-template-columns: 5% 90% 5%;
+  -ms-grid-columns: 16px auto 16px;
+      grid-template-columns: 16px auto 16px;
   -ms-grid-rows: 40px 40px auto auto;
       grid-template-rows: 40px 40px auto auto;
   row-gap: 24px;
@@ -156,9 +156,7 @@ body {
 }
 
 .services__options-list {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
+  grid-column: 2 / -1;
   -ms-grid-row: 2;
   grid-row: 2;
   display: -webkit-box;
@@ -221,9 +219,7 @@ body {
 }
 
 .services__photo {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
   -ms-grid-row: 4;
   grid-row: 4;
   width: 100%;
@@ -250,6 +246,30 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 152px;
+  }
+  .services {
+    -ms-grid-columns: 24px auto 360px 40px;
+        grid-template-columns: 24px auto 360px 40px;
+    -ms-grid-rows: 40px 40px auto;
+        grid-template-rows: 40px 40px auto;
+    row-gap: 32px;
+  }
+  .services__description {
+    margin-right: 48px;
+  }
+  .services__description--text {
+    height: 160px;
+    line-height: 20px;
+  }
+  .services__photo {
+    -ms-grid-column: 3;
+    grid-column: 3;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    min-width: 360px;
+    min-height: 208px;
+    margin: 0;
+    border-radius: 6px;
   }
 }
 

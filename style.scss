@@ -92,7 +92,7 @@ body {
 
 .services {
   display: grid;
-  grid-template-columns: 5% 90% 5%;
+  grid-template-columns: 16px auto 16px;
   grid-template-rows: 40px 40px auto auto;
   row-gap: 24px;
   margin: 24px 0;
@@ -127,7 +127,7 @@ body {
   }
 
   &__options-list {
-    grid-column: 2 / 4;
+    grid-column: 2 / -1;
     grid-row: 2;
     display: flex;
     overflow-x: scroll;
@@ -184,7 +184,7 @@ body {
   }
 
   &__photo {
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
     grid-row: 4;
     width: 100%;
     margin-top: -8px;
