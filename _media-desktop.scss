@@ -3,8 +3,13 @@
     display: none;
   }
   .services {
-    grid-template-columns: 32px auto 32px;
-    grid-template-rows: 40px auto auto 176px;
+    grid-template-columns: 34px auto 520px 28px;
+    grid-template-rows: 40px auto auto;
+    row-gap: 8px;
+
+    &__title-block {
+      grid-column: 2 / 4;
+    }
 
     &__two-buttons {
       display: flex;
